@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Sen:400,700&display=swap&subset=latin-ext');
+
+
+
+body{
+  font-family: 'Sen', sans-serif; 
+  text-shadow: 1px 1px 6px #73706e;
+background: #ecdecb66;
+}
+
+.Header {
+    background-image: linear-gradient(to right, #b98c8c , #717153);
+    box-shadow: 0px 0px 5px rgba(0,0,0,1)
+    
+    }
+
+
+a{
+    color: #9bbfe6;
+    
+}
+
+.Corusel{
+    box-shadow: 0px 0px 5px rgba(0,0,0,1);
+}
+
+.Card{
+   
+   margin: 20px;
+}
+
+
+.navbar-collapse{
+    flex-basis: 100%;
+    @media (min-width:992px) ;
+        flex-basis:auto;
+}
+
+
+.Img{
+   
+    background-image: url('../companent/images/bali.jpg');
+    background-size:cover;
+}
+.Row{
+    background: #cecece;
+    border-radius: 30px;
+}
+
+.Footer{
+    
+    background-image: linear-gradient(to right, #b98c8c , #717153);
+    box-shadow: 0px 1px 9px 4px;
+
+}
+.Footerend{
+    text-align: center;
+}
+.Daxili{
+    width: 200px;
+}
+.Xarici{
+    width: 200px;
+}
+
+.Xususi{
+    width: 200px;
+}
