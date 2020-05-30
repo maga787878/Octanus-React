@@ -22,7 +22,7 @@ class CityTour extends Component {
       <div>
         <h2 style={{textAlign:"center",marginTop:"20px"}}>Ölkə daxili Turlar</h2>    
         <div className="container row ">
-            <div className="col-7">
+            <div className="col-7 city">
                   <img src={Quba} className="card-img" alt="..." style={{borderRadius:"60px",marginTop:"20px",height:"400px"}}/>
                   <img src={Goygol} className="card-img" alt="..." style={{marginTop:"75px",borderRadius:"60px",height:"400px"}}/>
                   <img src={Naftalan} className="card-img" alt="..." style={{borderRadius:"60px",marginTop:"40px"}}/>
@@ -36,10 +36,10 @@ class CityTour extends Component {
             <div key={category.id}>
            <div className="card-body " style={{padding:"20px"}}>
              <h5 className="card-title">{category.categoryName}</h5>
-            <p className="card-text" style={style.body} ><span style={style.cardText}>Say:</span> {category.person}</p>
-            <p className="card-text" style={style.body}><span style={style.cardText}>Qiymət:</span> {category.price}</p>
-            <p className="card-text" style={style.body}><span style={style.cardText}>Tura daxildir:</span> {category.service}</p>
-            <p className="card-text" style={style.body}><span style={style.cardText}>Tur haqqında:</span> {category.information}</p>
+            <p className="card-text city1" style={style.body} ><span style={style.cardText}>Say:</span> {category.person}</p>
+            <p className="card-text city2" style={style.body}><span style={style.cardText}>Qiymət:</span> {category.price}</p>
+            <p className="card-text city3" style={style.body}><span style={style.cardText}>Tura daxildir:</span> {category.service}</p>
+            <p className="card-text city4" style={style.body}><span style={style.cardText}>Tur haqqında:</span> {category.information}</p>
                  </div>
                 </div>
             ))}

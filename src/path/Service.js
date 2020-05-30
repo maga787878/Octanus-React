@@ -18,19 +18,19 @@ export default class Service extends Component {
         <h2 style={{ textAlign: "center" }}>Xidmətlərimiz</h2>
         <div className="row">
           <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-            <div className="card bg-dark" style={style.card}>
+            <div className="card bg-dark n1" style={style.card}>
               <img
                 src={DaxiliTur}
                 className="Daxili"
                 alt="..."
                 style={style.img}
               />
-              <div className="card-img-overlay">
+              <div className="card-img-overlay ">
                 <h5 className="card-title" style={{ textAlign: "center" }}>
                   Ölkə daxili turlar
                 </h5>
                 <p
-                  className="card-text"
+                  className="card-text n11"
                   style={style.p}
                 >
                   Məktəb turu, şəhər içi turu, yaxta turu və.s<br></br>
@@ -44,7 +44,7 @@ export default class Service extends Component {
             </div>
           </div>
           <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-            <div className="card bg-dark" style={style.card}>
+            <div className="card bg-dark n2" style={style.card}>
               <img
                 src={Xarici}
                 className="Daxili"
@@ -56,7 +56,7 @@ export default class Service extends Component {
                   Ölkə xarici turlar
                 </h5>
                 <p
-                  className="card-text"
+                  className="card-text n22"
                   style={style.p}
                 >
                   Bal ayı, Erkən rezervasiyalar, Qrup turlar, Fərdi turlar və.s <br></br>
@@ -69,7 +69,7 @@ export default class Service extends Component {
             </div>
           </div>
           <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-            <div className="card bg-dark" style={style.card}>
+            <div className="card bg-dark n3" style={style.card}>
               <img
                 src={Transfer}
                 className="Daxili"
@@ -81,7 +81,7 @@ export default class Service extends Component {
                 Vip Transfer
                 </h5>
                 <p
-                  className="card-text"
+                  className="card-text n33"
                   style={style.p}
                 >
                  Hava limanı service və Şəhər içi Transfer
@@ -93,7 +93,7 @@ export default class Service extends Component {
             </div>
           </div>
           <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-            <div className="card bg-dark" style={style.card}>
+            <div className="card bg-dark n4" style={style.card}>
               <img
                 src={Viza}
                 className="Daxili"
@@ -105,7 +105,7 @@ export default class Service extends Component {
                   Viza dəstəyi
                 </h5>
                 <p
-                  className="card-text"
+                  className="card-text n44"
                   style={style.p}
                 >
                   Şengen viza, turistlik və iş vizası

@@ -19,7 +19,7 @@ class TravelWorld extends Component {
             <div>
                 <h2 style={{textAlign:"center",marginTop:"20px"}}>Erkən rezervasiya</h2>    
         <div className="container row ">
-            <div className="col-7">
+            <div className="col-7 city">
                   <img src={Antalya} className="card-img" alt="..." style={{height:"400px",marginTop:"20px",borderRadius:"60px"}}/>
                   <img src={Marmaris} className="card-img" alt="..." style={{height:"400px",marginTop:"100px",borderRadius:"60px"}}/>
                   <img src={Bodrum} className="card-img" alt="..." style={{height:"400px",marginTop:"47px",borderRadius:"60px"}}/>
@@ -32,10 +32,10 @@ class TravelWorld extends Component {
             <div key={category.id}>
            <div className="card-body " style={{padding:"20px"}}>
              <h5 className="card-title">{category.categoryName}</h5>
-            <p className="card-text" style={style.body} ><span style={style.cardText}>Say:</span> {category.person} </p>
-            <p className="card-text" style={style.body}><span style={style.cardText}>Qiymət:</span> {category.price} başlayan qiymətlə</p>
-            <p className="card-text" style={style.body}><span style={style.cardText}>Hotellər:</span>{category.hotel}</p>
-            <p className="card-text" style={style.body}><span style={style.cardText}>Qiymətə daxildir:</span> {category.service}</p>
+            <p className="card-text city1" style={style.body} ><span style={style.cardText}>Say:</span> {category.person} </p>
+            <p className="card-text city2" style={style.body}><span style={style.cardText}>Qiymət:</span> {category.price} başlayan qiymətlə</p>
+            <p className="card-text city3" style={style.body}><span style={style.cardText}>Hotellər:</span>{category.hotel}</p>
+            <p className="card-text city4" style={style.body}><span style={style.cardText}>Qiymətə daxildir:</span> {category.service}</p>
                  </div>
                 </div>
             ))} 

@@ -7,15 +7,11 @@ const style = {
 }
 
 export default class Navi extends Component {
-  // state = {
-  //   isOpen: false,
-  // };
+  state = {
+    isOpen: false,
+  };
 
-  // navbarMenu = () => {
-  //   this.setState({
-  //     isOpen: !this.state.isOpen,
-  //   });
-  // };
+  buttonClicked(){this.setState({isNavOpen : !this.state.isNavOpen})}
 
   render() {
     return (
@@ -25,38 +21,22 @@ export default class Navi extends Component {
         <button
           className="navbar-toggler"
           type="button"
-          onClick={this.navbarMenu}
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onClick={this.buttonClicked.bind(this)}
           
         >
           <FiAlignRight/>
         </button>
 
-        {/* {
-          this.state.isOpen ? <ul className="navbar-nav ">
-          <li className="nav-item active ">
-            <Link style={{color:"#9bbfe6"}} className="nav-link" to="/home">
-              Əsas səhifə
-            </Link>
-          </li>
-          <li className="nav-item">
-            
-            <Link style={{color:"#9bbfe6"}} className="nav-link" to="/service">
-              Xidmətlər
-            </Link>
-          </li>
-
-          <li className="nav-item">
-            <Link style={{color:"#9bbfe6"}} className="nav-link" to="/company">
-              Şirkət haqqında
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link style={{color:"#9bbfe6"}} className="nav-link" to="/about">
-              Əlaqə
-            </Link>
-          </li>
-        </ul> : null
-        } */}
+        <div
+            className="collapse navbar-collapse"
+            style={{display: this.state.isNavOpen ? "block" : "none" }}
+           
+          >
        <ul className="navbar-nav ">
           <li className="nav-item active ">
             <Link style={style.link} className="nav-link" to="/home">
@@ -81,7 +61,7 @@ export default class Navi extends Component {
             </Link>
           </li>
         </ul>
-         
+         </div>
       
       </nav>
       </header>

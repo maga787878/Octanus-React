@@ -66,3 +66,116 @@ a{
 .Xususi{
     width: 200px;
 }
+
+
+@media screen and (max-width: 992px) {
+        div.navbar-collapse {
+            flex-basis: 100% !important;
+        
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        div.navbar-collapse {
+            flex-basis: auto !important;
+            flex-grow: 0 !important
+        }
+    }
+    @media screen and (max-width: 992px) {
+         p.n11{
+            display: none !important;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        div.n1{
+            height: 200px !important;
+        }
+       
+    }
+    @media screen and (max-width: 992px) {
+        p.n22{
+           display: none !important;
+       }
+   }
+
+   @media screen and (max-width: 992px) {
+       div.n2{
+           height: 200px !important;
+       }
+      
+   }
+   @media screen and (max-width: 992px) {
+    p.n33{
+       display: none !important;
+   }
+}
+
+@media screen and (max-width: 992px) {
+   div.n3{
+       height: 200px !important;
+   }
+  
+}
+@media screen and (max-width: 992px) {
+    p.n44{
+       display: none !important;
+   }
+}
+@media screen and (max-width: 992px) {
+    div.city{
+       display: none !important;
+   }
+}
+@media screen and (max-width: 992px) {
+    p.city1{
+       width: 400px !important;
+       margin-left: 50px !important;
+       text-align: center !important;
+   }
+}
+@media screen and (max-width: 992px) {
+    p.city2{
+        width: 400px !important;
+        margin-left: 50px !important;
+       text-align: center !important;
+   }
+}
+@media screen and (max-width: 992px) {
+    p.city3{
+        width: 400px !important;
+        margin-left: 50px !important;
+       text-align: center !important;
+   }
+}
+@media screen and (max-width: 992px) {
+    p.city4{
+        width: 400px !important;
+        margin-left: 50px !important;
+       text-align: center !important;
+   }
+}
+
+@media screen and (max-width: 992px) {
+   div.n4{
+       height: 200px !important;
+       
+       text-align: center !important;
+   }
+  
+}
+
+    @media screen and (max-width: 992px) {
+        img.card-img {
+          height: 600px !important;
+        
+        }
+      }
+
+
+
+    /* .navbar-collapse 
+    flex-basis: 100%
+    @media (min-width: 992px)
+      flex-basis: auto
+      flex-grow: 0  */
