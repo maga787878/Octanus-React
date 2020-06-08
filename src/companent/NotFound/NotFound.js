@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import NotFoundd from "../images/NotFound.png";
+import { Link } from "react-router-dom";
 
 export default class NotFound extends Component {
   render() {
@@ -8,13 +9,14 @@ export default class NotFound extends Component {
         <div className="container">
           <img style={{ width: "100%" }} src={NotFoundd} alt="..."></img>
         </div>
-        <button
+        <Link
+        to="/"
           style={{ marginLeft: "20%", marginBottom: "10%" }}
           type="button"
-          class="btn btn-danger"
+          className="btn btn-danger"
         >
           Əsas səhifə
-        </button>
+        </Link>
       </div>
     );
   }

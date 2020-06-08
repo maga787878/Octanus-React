@@ -5,7 +5,9 @@ import Bali2 from "../images/bali2.jpeg";
 export default class Img extends Component {
   render() {
     return (
-      <div className="card bg-dark text-white" style={{border:"none"}}>
+
+      
+      <div className="card bg-dark text-white" style={{borderRadius:"50%",marginTop:"20px"}}>
         <img src={Bali2} className="card-img" alt="..." style={{height:"1000px" ,borderRadius:"230px"}}/>
         <div className="card-img-overlay">
           <h5 className="card-title" style={{textAlign:"center",color:"#22252a",textShadow: "1px 1px 6px #73706e",fontSize:"100px"}}>Bali turu</h5>

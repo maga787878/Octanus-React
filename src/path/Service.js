@@ -1,123 +1,137 @@
 import React, { Component } from "react";
+import "./Service.css";
 import { Link } from "react-router-dom";
 import DaxiliTur from "../companent/images/daxili.jpg";
 import Xarici from "../companent/images/olkexa.jpg";
 import Transfer from "../companent/images/tranfer.jpg";
 import Viza from "../companent/images/Viza.jpg";
 
-const style = {
-  img: {width:"100%",height:"100%"},
-  p:{background:"rgba(239, 217, 194, 0.6)",borderRadius:"6px"},
-  card:{marginBottom:"20px", height:"360px"}
-}
-
 export default class Service extends Component {
   render() {
     return (
       <div className="container">
-        <h2 style={{ textAlign: "center" }}>Xidmətlərimiz</h2>
-        <div className="row">
+        <h2 style={{ textAlign: "center",paddingTop: "30px" }}>Xidmətlərimiz</h2>
+        <div className="row D">
           <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-            <div className="card bg-dark n1" style={style.card}>
-              <img
-                src={DaxiliTur}
-                className="Daxili"
-                alt="..."
-                style={style.img}
-              />
-              <div className="card-img-overlay ">
-                <h5 className="card-title" style={{ textAlign: "center" }}>
-                  Ölkə daxili turlar
-                </h5>
-                <p
-                  className="card-text n11"
-                  style={style.p}
-                >
-                  Məktəb turu, şəhər içi turu, yaxta turu və.s<br></br>
-                  İstər Qrup halında istərsədə öz qrupunuzu yaradaraq ölkəmizin
-                  istənilən yerlərində istirahət edə bilərsiniz
+            <figure className="snip0056 n1">
+              <figcaption>
+                <h2>
+                  Ölkə daxili <span>turlar</span>
+                </h2>
+                <p>
+                  Məktəb turu, şəhər içi turu, yaxta turu və.s İstər Qrup
+                  halında istərsədə öz qrupunuzu yaradaraq ölkəmizin istənilən
+                  yerlərində istirahət edə bilərsiniz
                 </p>
+                <div className="icons">
+                  <Link to="/">
+                    <i className="ion-ios-home"></i>
+                  </Link>
+                  <a href="mailto:octanus.travel@gmail.com">
+                    <i className="ion-ios-email"></i>
+                  </a>
+                  <a href="tel:+994559190287">
+                    <i className="ion-ios-telephone"></i>
+                  </a>
+                </div>
+              </figcaption>
+              <img src={DaxiliTur} alt="sample8" />
+              <div className="position">
                 <Link to="/service/citytour">
-                  <span className="badge badge-info">Ətraflı</span>
+                  <span className="position">Ətraflı</span>
                 </Link>
               </div>
-            </div>
+            </figure>
           </div>
           <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-            <div className="card bg-dark n2" style={style.card}>
-              <img
-                src={Xarici}
-                className="Daxili"
-                alt="..."
-                style={style.img}
-              />
-              <div className="card-img-overlay">
-                <h5 className="card-title" style={{ textAlign: "center" }}>
-                  Ölkə xarici turlar
-                </h5>
-                <p
-                  className="card-text n22"
-                  style={style.p}
-                >
-                  Bal ayı, Erkən rezervasiyalar, Qrup turlar, Fərdi turlar və.s <br></br>
-                  İstənilən ölkələrə tur paketlərin hazırlanması 
+            <figure className="snip0056 yellow n2">
+              <figcaption>
+                <h2>
+                  Ölkə Xarici <span>turlar</span>
+                </h2>
+                <p>
+                  Erkən rezervasiyalar,Xüsusi turlar,istənilən ölkələrə tur
+                  paketlər və aviabiletlərin münasib qiymətə satışı həyata
+                  keçirilir{" "}
                 </p>
+                <div className="icons">
+                  <Link to="/">
+                    <i className="ion-ios-home"></i>
+                  </Link>
+                  <a href="mailto:octanus.travel@gmail.com">
+                    <i className="ion-ios-email"></i>
+                  </a>
+                  <a href="tel:+994559190287">
+                    <i className="ion-ios-telephone"></i>
+                  </a>
+                </div>
+              </figcaption>
+              <img src={Xarici} alt="sample9" />
+              <div className="position">
                 <Link to="/service/travelworld">
-                  <span className="badge badge-info">Ətraflı</span>
+                  <span className="position">Ətraflı</span>
                 </Link>
               </div>
-            </div>
+            </figure>
           </div>
           <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-            <div className="card bg-dark n3" style={style.card}>
-              <img
-                src={Transfer}
-                className="Daxili"
-                alt="..."
-                style={style.img}
-              />
-              <div className="card-img-overlay">
-                <h5 className="card-title" style={{ textAlign: "center" }}>
-                Vip Transfer
-                </h5>
-                <p
-                  className="card-text n33"
-                  style={style.p}
-                >
-                 Hava limanı service və Şəhər içi Transfer
-                </p>
-                <Link to="">
-                  <span className="badge badge-info">Ətraflı</span>
+            <figure className="snip0056 n3">
+              <figcaption>
+                <h2>
+                  Vip<span>Transfer</span>
+                </h2>
+                <p>Hava limanı service və Şəhər içi Transfer</p>
+                <div className="icons">
+                  <Link to="/">
+                    <i className="ion-ios-home"></i>
+                  </Link>
+                  <a href="mailto:octanus.travel@gmail.com">
+                    <i className="ion-ios-email"></i>
+                  </a>
+                  <a href="tel:+994559190287">
+                    <i className="ion-ios-telephone"></i>
+                  </a>
+                </div>
+              </figcaption>
+              <img src={Transfer} alt="sample8" />
+              <div className="position">
+                {" "}
+                <Link to="/service/transfer">
+                  <span className="position">Ətraflı</span>
                 </Link>
               </div>
-            </div>
+            </figure>
           </div>
           <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-            <div className="card bg-dark n4" style={style.card}>
-              <img
-                src={Viza}
-                className="Daxili"
-                alt="..."
-                style={style.img}
-              />
-              <div className="card-img-overlay">
-                <h5 className="card-title" style={{ textAlign: "center" }}>
-                  Viza dəstəyi
-                </h5>
-                <p
-                  className="card-text n44"
-                  style={style.p}
-                >
-                  Şengen viza, turistlik və iş vizası
-                </p>
-                <Link to="">
-                  <span className="badge badge-info">Ətraflı</span>
+            <figure className="snip0056 yellow n4">
+              <figcaption>
+                <h2>
+                  Viza<span>dəstəyi</span>
+                </h2>
+                <p>Şengen viza, turistlik və iş vizası</p>
+                <div className="icons">
+                  <Link to="/">
+                    <i className="ion-ios-home"></i>
+                  </Link>
+                  <a href="mailto:octanus.travel@gmail.com">
+                    <i className="ion-ios-email"></i>
+                  </a>
+                  <a href="tel:+994559190287">
+                    <i className="ion-ios-telephone"></i>
+                  </a>
+                </div>
+              </figcaption>
+              <img src={Viza} alt="sample9" />
+              <div className="position">
+                {" "}
+                <Link to="contact">
+                  <span className="position">Ətraflı</span>
                 </Link>
               </div>
-            </div>
+            </figure>
           </div>
-          </div>
-        <hr style={{borderTop:"2px solid rgba(0,0,0,1)"}}></hr>
+        </div>
+        <hr style={{ borderTop: "2px solid rgba(0,0,0,1)" }}></hr>
       </div>
     );
   }

@@ -5,13 +5,8 @@ import Bodrumtatil from "../images/bodrumtatil.jpg";
 import Tatil from "../images/tatil.jpg";
 import Bodrum from "../images/bodrumcard2.jpg";
 import Marmaris2 from "../images/marmaris2.jpg";
-
+import "./Card.css"
 import { Link } from "react-router-dom";
-const style= {
-  link:{ backgroundColor:"#531324d4",color:"#9bbfe6"},
-  p:{fontSize:"20px",color:"red"},
-  img:{height:"220px",borderTopRightRadius:"10rem"}
-}
 
 export default class Card extends Component {
   render() {
@@ -22,89 +17,85 @@ export default class Card extends Component {
         <br></br>
         <br></br>
         <div className="row">
-        <div className="text-center col-lg-4 col-md-6 col-sm-6 m-b30 card-container Card" style={{ marginRight:"auto" }}>
-            <img src={Antalya} className="card-img-top" alt="..." style={style.img} />
-            <div className="card-body">
-              <h3>Antalya</h3>
-              <p className="card-text">
-               6 gecə 7 gün cəmi <span style={style.p}>300$ </span> başlayan qiymətlərlə
-              </p>
-              <Link to="/service/travelworld" className="btn" style={style.link}>
-              Ətraflı
-              </Link>
-            </div>
+        <div className="text-center col-lg-4 col-md-6 col-sm-6 card-container" style={{ marginRight:"auto" }}>
+            
+            <figure className="snip0016">
+	<img src={Antalya} alt="sample43"/>
+	<figcaption>
+		<h2>Antalya <span>Erkən</span> Rezervasİya</h2>
+		<p>3*,4* və 5* hoteller cəmi 200$ başlayan qiymətlərlə
+      ətraflı melumat üçün üstünə basın
+    </p>
+    <Link to="/service/travelworld"></Link>
+	</figcaption>			
+</figure>
           </div>
-        <div className="text-center col-lg-4 col-md-6 col-sm-6 m-b30 card-container Card" >
-            <img src={Marmaris} className="card-img-top" alt="..."  style={style.img}/>
-            <div className="card-body">
-            <h3>Marmaris</h3>
-              <p className="card-text">
-              6 gecə 7 gün cəmi <span style={style.p}>400$ </span> başlayan qiymətlərlə
-              </p>
-              <Link to="/service/travelworld" className="btn " style={style.link}>
-              Ətraflı
-              </Link>
-            </div>
-          </div>
-          <div
-            className="text-center col-lg-4 col-md-6 col-sm-6 m-b30 card-container Card"
-            style={{ width: "18rem",marginRight:"auto" }}
-          >
-            <img src={Bodrum} className="card-img-top" alt="..." style={style.img} />
-            <div className="card-body">
-            <h3>Bodrum</h3>
-              <p className="card-text">
-              6 gecə 7 gün cəmi <span style={style.p}>250$ </span> başlayan qiymətlərlə
-              </p>
-              <Link to="/service/travelworld" className="btn " style={style.link}>
-              Ətraflı
-              </Link>
-            </div>
+        <div className="text-center col-lg-4 col-md-6 col-sm-6 card-container" >
+        <figure className="snip0016">
+	<img src={Marmaris} alt="sample43"/>
+	<figcaption>
+		<h2>Marmaris <span>Erkən</span> Rezervasİya </h2>
+		<p>3*,4* və 5* hoteller cəmi 400$ başlayan qiymətlərlə
+      ətraflı melumat üçün üstünə basın</p>
+    <Link to="/service/travelworld"></Link>
+	</figcaption>			
+</figure>
           </div>
           <div
-            className="text-center col-lg-4 col-md-6 col-sm-6 m-b30 card-container Card"
-            style={{ width: "18rem" }}
+            className="text-center col-lg-4 col-md-6 col-sm-6 card-container"
+            style={{marginRight:"auto" }}
           >
-            <img src={Tatil} className="card-img-top" alt="..." style={style.img} />
-            <div className="card-body">
-            <h3>Kuşadası</h3>
-              <p className="card-text">
-              6 gecə 7 gün cəmi <span style={style.p}>280$ </span> başlayan qiymətlərlə
-              </p>
-              <Link to="/service/travelworld" className="btn " style={style.link}>
-              Ətraflı
-              </Link>
-            </div>
+            <figure className="snip0016">
+	<img src={Bodrum} alt="sample43"/>
+	<figcaption>
+		<h2>Bodrum <span>Erkən</span> Rezervasİya </h2>
+		<p>3*,4* və 5* hoteller cəmi 250$ başlayan qiymətlərlə
+      ətraflı melumat üçün üstünə basın</p>
+		<Link to="/service/travelworld"></Link>
+	</figcaption>			
+</figure>
           </div>
           <div
-            className=" text-center col-lg-4 col-md-6 col-sm-6 m-b30 card-container Card"
-            style={{ width: "18rem" ,marginRight:"auto"}}
+            className="text-center col-lg-4 col-md-6 col-sm-6 card-container"
+           
           >
-            <img src={Bodrumtatil} className="card-img-top" alt="..." style={style.img} />
-            <div className="card-body">
-            <h3>Alanya</h3>
-              <p className="card-text">
-              6 gecə 7 gün cəmi <span style={style.p}>200$ </span> başlayan qiymətlərlə
-              </p>
-              <Link to="/service/travelworld" className="btn " style={style.link}>
-              Ətraflı
-              </Link>
-            </div>
+             <figure className="snip0016">
+	<img src={Tatil} alt="sample43"/>
+	<figcaption>
+		<h2>Kuşadası <span>Erkən</span> Rezervasİya </h2>
+		<p>3*,4* və 5* hoteller cəmi 280$ başlayan qiymətlərlə
+      ətraflı melumat üçün üstünə basın</p>
+    <Link to="/service/travelworld"></Link>
+	</figcaption>			
+</figure>
           </div>
           <div
-            className="text-center col-lg-4 col-md-6 col-sm-6 m-b30 card-container Card"
-            style={{ width: "18rem" }}
+            className=" text-center col-lg-4 col-md-6 col-sm-6 card-container"
+            style={{ marginRight:"auto"}}
           >
-            <img src={Marmaris2} className="card-img-top" alt="..." style={style.img} />
-            <div className="card-body">
-            <h3>Belek</h3>
-              <p className="card-text">
-              6 gecə 7 gün cəmi <span style={style.p}>200$ </span> başlayan qiymətlərlə
-              </p>
-              <Link to="/service/travelworld" className="btn " style={style.link}>
-               Ətraflı
-              </Link>
-            </div>
+            <figure className="snip0016">
+	<img src={Bodrumtatil} alt="sample43"/>
+	<figcaption>
+		<h2>Alanya <span>Erkən</span> Rezervasİya </h2>
+		<p>3*,4* və 5* hoteller cəmi 200$ başlayan qiymətlərlə
+      ətraflı melumat üçün üstünə basın</p>
+    <Link to="/service/travelworld"></Link>
+	</figcaption>			
+</figure>
+          </div>
+          <div
+            className="text-center col-lg-4 col-md-6 col-sm-6  card-container"
+            
+          >
+             <figure className="snip0016">
+	<img src={Marmaris2} alt="sample43"/>
+	<figcaption>
+		<h2>Belek <span>Erkən</span> Rezervasİya </h2>
+		<p>3*,4* və 5* hoteller cəmi 200$ başlayan qiymətlərlə
+      ətraflı melumat üçün üstünə basın</p>
+    <Link to="/service/travelworld"></Link>
+	</figcaption>			
+</figure>
           </div>
 
         </div>
